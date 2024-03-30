@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body class="font-principal">
+
+    <header class="">
+        <nav class=" wrapper h-20 flex items-center justify-between xl:justify-around">
+            <a href="./" class="w-1/3 max-w-20 md:max-w-28">
+                <img src="images/logo.svg" alt="logo" class="w-full">
+            </a>
+
+            <i id="menu" class="ri-menu-line text-2xl cursor-pointer relative z-50 md:hidden"></i>
+
+            <div id="menuList" class="fixed z-30 h-screen inset-0 flex justify-center items-start py-24 bg-gradient-to-b from-white/70 to-black/70 -translate-x-full transition-transform duration-500 md:py-0 md:items-center md:translate-x-0 md:static md:bg-none">
+
+                <ul  class=" absolute bg-white rounded-md flex flex-col gap-5 text-center w-[90%] mx-auto py-6 text-Dark-Blue font-medium shadow-xl md:static md:w-max md:bg-transparent md:py-0 md:flex-row md:gap-6 md:shadow-none lg:gap-8 xl:gap-10">
+
+                    <li><a class="hover:text-blue-600" href="#">Pricing</a></li>
+                    <li><a class="hover:text-blue-600" href="#">Product</a></li>
+                    <li><a class="hover:text-blue-600" href="#">About Us</a></li>
+                    <li><a class="hover:text-blue-600" href="#">Careers</a></li>
+                    <li><a class="hover:text-blue-600" href="#">Community</a></li>
+                </ul>
+            </div>
+            <a class="hidden  lg:flex lg:button lg:shadow-xl lg:shadow-Bright-Red/30" href="#">Get Started</a>
+        </nav>
+    </header>
+    <main>
+        <section class="wrapper relative z-10 sm:flex sm:justify-center sm:flex-row-reverse sm:pt-28 md:justify-between lg:pt-0 lg:h-calc lg:items-center xl:justify-around">
+            <figure class="flex justify-center items-center">
+                <img class="md:max-w-sm lg:max-w-md xl:max-w-[34rem]" src="images/illustration-intro.svg" alt="ilustracion">
+            </figure>
+            <div class="text-center py-3 flex flex-col items-center sm:text-start sm:max-w-[21.875rem] sm:flex sm:items-start sm:flex-col sm:gap-2 xl:max-w-[26rem]">
+                <h1 class="text-3xl text-Dark-Blue xl:text-5xl xl:leading-[3.4rem]">Bring everyone together to build better products.</h1>
+                <p class="py-2 text-Dark-Grayish-Blue text-[16px] mb-4 lg:max-w-[350px]">Manage makes it simple for software teams to play day-to-day tasks while keeping the larger team goals in view.</p>
+                <a href="#" class="button shadow-xl shadow-Bright-Red/30 xl:ml-[10px]">Get Started</a>
+            </div>
+            <img class="absolute z-[-1] top-[-84px] right-[-42px] max-w-[22rem] sm:max-w-[30rem] sm:right-[-148px] xl:max-w-2xl xl:top-[-228px] xl:right-[-202px]" src="images/bg-tablet-pattern.svg" alt="pattern">
+        </section>
+        <section class="mt-16 relative h-[100%] xl:h-screen wrapper flex flex-row flex-wrap justify-center items-center md:items-start md:gap-6 lg:justify-between xl:justify-around">
+            <div class="text-center mb-8 max-w-96 lg:text-start lg:max-w-md">
+                <h2 class="text-Dark-Blue  text-3xl mb-4">Whats different <br class="hidden"> about Manage?</h2>
+                <p class="text-Dark-Grayish-Blue text-base leading-8 max-w-[22rem]">Manage provides all the fuctionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+                <img class="hidden xl:block xl:absolute xl:bottom-[-290px] xl:left-[-410px] xl:max-w-2xl" src="images/bg-tablet-pattern.svg" alt="pattern">
+            </div>
+            <div class="flex flex-col max-w-sm gap-4 justify-center items-center lg:max-w-md">
+                <article class="card">
+                    <h3 class="text-Dark-Blue text-start font-extrabold bg-orange-light lg:bg-transparent rounded-full text-base py-1 px-2 flex justify-center items-center gap-1 lg:gap-7"><span class="py-2 px-6 bg-Bright-Red text-white rounded-full">01</span>Track company-wide progress</h3>
+                    <p class="text-base text-Dark-Grayish-Blue leading-7 lg:ml-24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus voluptatem neque quos quod laudantium repellendus impedit ipsa saepe aspernatur illum, nam officia. </p>
+                </article>
+                <article class="card">
+                    <h3 class="text-Dark-Blue text-start font-extrabold bg-orange-light lg:bg-transparent  rounded-full text-base py-1 px-2 flex justify-center items-center gap-1 lg:gap-7"><span class="py-2 px-6 bg-Bright-Red text-white rounded-full">02</span>Advanced built-in reports</h3>
+                    <p class="text-base text-Dark-Grayish-Blue leading-7 lg:ml-24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus voluptatem neque quos quod laudantium repellendus impedit ipsa saepe aspernatur illum, nam officia.</p>
+                </article>
+                <article class="card">
+                    <h3 class="text-Dark-Blue text-start font-extrabold bg-orange-light lg:bg-transparent rounded-full text-base py-1 px-2 flex justify-center items-center gap-1 lg:gap-7 tracking-[-1px]"><span class="py-2 px-6 bg-Bright-Red text-white rounded-full">03</span>Everything you need in one place</h3>
+                    <p class="text-base text-Dark-Grayish-Blue leading-7 lg:ml-24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus voluptatem neque quos quod laudantium repellendus impedit ipsa saepe aspernatur illum, nam officia.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script>
+                
+
+        const menuList = document.getElementById('menuList');
+        const menu = document.getElementById('menu');
+
+            menu.addEventListener('click', ()=>{
+                menuList.classList.toggle('-translate-x-full')
+
+            })
+
+        
+    </script>
+    
+
+</body>
+</html>

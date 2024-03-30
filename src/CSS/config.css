@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .wrapper{
+        @apply w-[90%] mx-auto max-w-screen-xl overflow-hidden;
+    }
+    .button{
+        @apply bg-Bright-Red text-Very-Light-Gray block w-max py-4 px-8 rounded-full hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in ease-in;
+    }
+    .card{
+        @apply  flex flex-col justify-start items-start gap-2
+    }
+}
+
+@layer utilities {
+    .h-calc {
+      height: calc(100vh - 80px);
+    }
+  }
+  
