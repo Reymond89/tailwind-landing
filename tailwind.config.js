@@ -26,6 +26,11 @@ module.exports = {
           letterSpacing: '-0.02em',
           fontWeight: '700',
         }],
+        '4xl': ['2.5rem', {
+          lineHeight: '3.4rem',
+          letterSpacing: '-0.02em',
+          fontWeight: '500',
+        }],
        
   },
   plugins: [],
