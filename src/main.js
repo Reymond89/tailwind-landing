@@ -5,16 +5,17 @@ const menu = document.getElementById('menu');
         menuList.classList.toggle('-translate-x-full')
 
     })
+    
 
-const circles = document.querySelectorAll('#circles');
-const cards = document.querySelectorAll('#cards');
+// const circles = document.querySelectorAll('#circles');
+// const cards = document.querySelectorAll('#cards');
 
-circles.forEach( circle =>{
-    circle.addEventListener('click', ()=>{
-        cards.forEach( card =>{
-            card.addEventListener('click', ()=>{
-                card.style.Zindex = 9999;
-            })
-        })
-        })
-    })
+// circles.forEach( circle =>{
+//     circle.addEventListener('click', ()=>{
+//         cards.forEach( card =>{
+//             card.addEventListener('click', ()=>{
+//                 card.style.Zindex = 9999;
+//             })
+//         })
+//         })
+//     })

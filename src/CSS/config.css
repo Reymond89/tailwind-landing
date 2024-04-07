@@ -8,10 +8,13 @@
         @apply w-[90%] mx-auto max-w-screen-xl overflow-hidden;
     }
     .button{
-        @apply bg-Bright-Red text-Very-Light-Gray block w-max py-4 px-8 rounded-full hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in ease-in;
+        @apply bg-Bright-Red text-Very-Light-Gray block w-max py-4 px-8 rounded-full hover:scale-105 transition-all duration-300 ease-in;
     }
     .card{
         @apply  flex flex-col justify-start items-start gap-2
+    }
+    .scale-media{
+        @apply hover:scale-125 transition-all duration-200 ease-in
     }
 }
 

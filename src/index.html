@@ -35,7 +35,7 @@
         </nav>
     </header>
     <main>
-        <section class="wrapper relative z-10 sm:flex sm:justify-center sm:flex-row-reverse sm:pt-28 md:justify-between lg:pt-0 lg:h-calc lg:items-center xl:justify-around">
+        <section id="home" class="wrapper relative z-10 sm:flex sm:justify-center sm:flex-row-reverse sm:pt-28 md:justify-between lg:pt-0 lg:h-calc lg:items-center xl:justify-around">
             <figure class="flex justify-center items-center">
                 <img class="md:max-w-sm lg:max-w-md xl:max-w-[34rem]" src="images/illustration-intro.svg" alt="ilustracion">
             </figure>
@@ -50,7 +50,7 @@
             <div class="text-center mb-8 max-w-96 lg:text-start lg:max-w-md">
                 <h2 class="text-Dark-Blue  text-3xl mb-4">Whats different <br class="hidden"> about Manage?</h2>
                 <p class="text-Dark-Grayish-Blue text-base leading-8 max-w-[22rem]">Manage provides all the fuctionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
-                <img class="hidden xl:block xl:absolute xl:bottom-[-290px] xl:left-[-410px] xl:max-w-2xl" src="images/bg-tablet-pattern.svg" alt="pattern">
+                <img class="hidden xl:block xl:absolute xl:bottom-[0px] xl:left-[-410px] xl:max-w-2xl" src="images/bg-tablet-pattern.svg" alt="pattern">
             </div>
             <div class="flex flex-col max-w-sm gap-4 justify-center items-center lg:max-w-md">
                 <article class="card">
@@ -70,17 +70,17 @@
         <section class="mt-20 lg:h-screen lg:flex lg:flex-col lg:justify-center lg:items-center">
             <h3 class="text-3xl text-Dark-Blue text-center">What they've said</h3>
         <div class="wrapper text-center flex flex-col justify-center items-center mt-10 lg:flex-row lg:gap-5 lg:mb-8 lg:justify-between lg:items-center xl:gap-7 xl:max-w-full">    
-            <article id="cards" class="order-2 relative max-w-lg mt-16 px-2 pt-12 pb-8 mb-5 bg-Very-Light-Gray max-[90%] flex flex-col justify-center gap-5 items-center">
+            <article id="cards1" class="order-2 relative max-w-lg mt-16 px-2 pt-12 pb-8 mb-5 bg-Very-Light-Gray max-[90%] flex flex-col justify-center gap-5 items-center">
                 <img class="max-w-16 absolute -top-8" src="images/avatar-ali.png" alt="person">
                 <h5 class="text-xl font-semibold text-Dark-Blue">Ali Bravo</h5>
                 <p class="text-base leading-7 text-Dark-Grayish-Blue">"We have beed able to ancel so many other subscriptions since using Manage. there is no more cross-channel confusion and everyone is much more focused."</p>
             </article>
-            <article id="cards" class="order-1 relative max-w-lg hidden lg:flex mt-16 px-2 pt-12 pb-8 mb-5 bg-Very-Light-Gray max-[90%] flex flex-col justify-center gap-5 items-center">
+            <article id="cards2" class="order-1 relative max-w-lg hidden lg:flex mt-16 px-2 pt-12 pb-8 mb-5 bg-Very-Light-Gray max-[90%] flex-col justify-center gap-5 items-center">
                 <img class="max-w-16 absolute -top-8" src="images/avatar-anisha.png" alt="person">
                 <h5 class="text-xl font-semibold text-Dark-Blue">Anisha Li</h5>
                 <p class="text-base leading-7 text-Dark-Grayish-Blue">"We have beed able to ancel so many other subscriptions since using Manage. there is no more cross-channel confusion and everyone is much more focused."</p>
             </article>
-            <article id="cards" class="order-3 relative max-w-lg hidden xl:flex mt-16 px-2 pt-12 pb-8 mb-5 bg-Very-Light-Gray max-[90%] flex flex-col justify-center gap-5 items-center">
+            <article id="cards3" class="order-3 relative max-w-lg hidden xl:flex mt-16 px-2 pt-12 pb-8 mb-5 bg-Very-Light-Gray max-[90%] flex-col justify-center gap-5 items-center">
                 <img class="max-w-16 absolute -top-8" src="images/avatar-richard.png" alt="person">
                 <h5 class="text-xl font-semibold text-Dark-Blue">Richard Watts</h5>
                 <p class="text-base leading-7 text-Dark-Grayish-Blue">"We have beed able to ancel so many other subscriptions since using Manage. there is no more cross-channel confusion and everyone is much more focused."</p>
@@ -89,10 +89,9 @@
         <div class="flex flex-col justify-center items-center">
 
             <div class="flex gap-2 mb-8 lg:hidden cursor-pointer">
-                    <span id="circles" class="w-2 h-2 rounded-full border border-solid border-Bright-Red"></span>
-                    <span id="circles" class="w-2 h-2 rounded-full border border-solid bg-Bright-Red"></span>
-                    <span id="circles" class="w-2 h-2 rounded-full border border-solid border-Bright-Red"></span>
-            
+                <a class="w-2 h-2 rounded-full border border-solid border-Bright-Red opacity-75 hover:opacity-100 transition-all ease-in duration-300" href="#cards1"></a>
+                <a class="w-2 h-2 rounded-full border border-solid border-Bright-Red opacity-75 hover:opacity-100 transition-all ease-in duration-300" href="#cards2"></a>
+                <a class="w-2 h-2 rounded-full border border-solid border-Bright-Red opacity-75 hover:opacity-100 transition-all ease-in duration-300" href="#cards3"></a>
             </div>
                <a class="button lg:shadow-xl lg:shadow-Bright-Red/30 mb-5" href="#">Get Started</a>
         </div>      
@@ -108,17 +107,17 @@
           
         </section>
     </main>
-    <footer class="min-h-[80%] bg-Very-Dark-Blue pt-10 relative xl:min-h-[40vh]">
+    <footer class="min-h-[80%] bg-Very-Dark-Blue pt-10 relative flex xl:min-h-[40vh]">
         <div class="wrapper overflow-visible flex flex-col justify-center items-center xl:flex-row-reverse">
             
             <form class=" w-full flex justify-center items-center gap-3 xl:w-[40%]">
                 <input class="rounded-full w-full max-w-[400px] py-3 pl-3 pr-6 outline-none xl:max-w-[300px]" type="text" placeholder="Updates in your inbox...">
-                <input class="button py-3 px-7" type="submit" value="GO">
+                <input class="button py-3 px-7 cursor-pointer" type="submit" value="GO">
             </form>
             <div class="w-full flex-col flex md:justify-evenly md:items-center md:flex-row-reverse">
                 <div class="pt-12 w-full flex justify-around items-center xl:items-start">              
                     <div class="flex flex-col gap-3">
-                        <li class="list-none"><a class="text-base font-light text-white hover:text-Bright-Red"  href="#">Home</a></li>
+                        <li class="list-none"><a class="text-base font-light text-white hover:text-Bright-Red"  href="#home">Home</a></li>
                         <li class="list-none"><a class="text-base font-light text-white hover:text-Bright-Red"  href="#">Pricing</a></li>
                         <li class="list-none"><a class="text-base font-light text-white hover:text-Bright-Red"  href="#">Products</a></li>
                         <li class="list-none"><a class="text-base font-light text-white hover:text-Bright-Red"  href="#">About Us</a></li>
@@ -131,13 +130,14 @@
                 </div>
                 <div class="w-full pt-8 flex flex-col justify-center items-center gap-10 md:flex-col-reverse md:justify-start md:items-center ">
                     <ul class="w-full flex flex-wrap justify-evenly items-center gap-7 md:max-w-[220px] md:gap-2">
-                        <li><a href="#"><img class="w-7 h-7 text-Bright-Red" src="images/icon-facebook.svg" alt="icon"></a></li>
-                        <li><a href="#"><img class="w-7 h-7" src="images/icon-youtube.svg" alt="icon"></a></li>
-                        <li><a href="#"><img class="w-7 h-7" src="images/icon-twitter.svg" alt="icon"></a></li>
-                        <li><a href="#"><img class="w-7 h-7" src="images/icon-pinterest.svg" alt="icon"></a></li>
-                        <li><a href="#"><img class="w-7 h-7" src="images/icon-instagram.svg" alt="icon"></a></li>
+                        <li><a href="#"><img class="w-7 h-7 scale-media" src="images/icon-facebook.svg" alt="icon"></a></li>
+                        <li><a href="#"><img class="w-7 h-7 scale-media" src="images/icon-youtube.svg" alt="icon"></a></li>
+                        <li><a href="#"><img class="w-7 h-7 scale-media" src="images/icon-twitter.svg" alt="icon"></a></li>
+                        <li><a href="#"><img class="w-7 h-7 scale-media" src="images/icon-pinterest.svg" alt="icon"></a></li>
+                        <li><a href="#"><img class="w-7 h-7 scale-media" src="images/icon-instagram.svg" alt="icon"></a></li>
                     </ul>
-                    <img class="max-w-72 invert" src="images/logo.svg" alt="logo">
+                    <a href="#home"><img class="max-w-72 invert" src="images/logo.svg" alt="logo"></a>
+                    
                 </div>
                          
             </div>
